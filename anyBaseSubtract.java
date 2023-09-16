@@ -1,14 +1,13 @@
 import java.util.*;
 
-public class anybasesub {
+public class anyBaseSubtract {
     public static long anyBaseSub(long n1,long n2,long b){
         long ans=0,rem1=0,rem2=0,rem=0,pow=1,sub=0,borrow=0;
-        if(n2>n1){
+        if(n2<n1){
             long temp=n1;
             n1=n2;
             n2=temp;
         }
-        else{
         while(n2>0){
             rem1=n1%10;
             rem2=n2%10;
@@ -18,7 +17,7 @@ public class anybasesub {
 
             sub=(rem2+borrow)-rem1;
             rem=sub;
-            if(sub<0){
+            if(rem<0){
                 rem=rem+b;
                 borrow=-1;
             }
@@ -26,7 +25,7 @@ public class anybasesub {
                 borrow=0;
             ans=ans+rem*pow;
             pow=pow*10;
-        }}
+        }
         return ans;
     }
 
