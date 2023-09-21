@@ -1,3 +1,5 @@
+//Not solved yet Have some errors in the code
+
 import java.util.*;
 
 public class diffarr {

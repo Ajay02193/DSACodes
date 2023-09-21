@@ -25,10 +25,10 @@ public class subsetArray {
             int[] bin=getBinary(i,n);
 
             for(int j=0;j<n;j++){
-                if(bin[j]==0)
-                    System.out.print("- ");
-                else
+                if(bin[j]!=0)
                     System.out.print(arr[j]+" ");
+                else
+                    System.out.print("- ");
             }
             System.out.println(" ");
         }    
